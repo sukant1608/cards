@@ -1,38 +1,200 @@
-.App {
-  text-align: center;
+#a {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background-color: pink;
+  top: 100px;
+  left: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#b {
+  -webkit-transition: width 300ms ease-in-out, height 300ms ease-in-out,
+    margin 300ms ease-in-out, border-radius 300ms ease-in-out,
+    top 300ms ease-in-out, left 300ms ease-in-out;
+  position: absolute;
+  z-index: -9;
+  top: 100px;
+  left: 110px;
+  width: 210px;
+  height: 220px;
+  background-color: blue;
+  border-radius: 20px;
+}
+#b:hover,
+#a:hover ~ #b {
+  width: 240px;
+  height: 240px;
+  top: 90px;
+  left: 80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#d {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  bottom: 10px;
+  left: -10px;
+  border-radius: 5px;
+  display: inline;
+}
+#e {
+  padding-left: 5px;
+  padding-bottom: 10px;
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  bottom: 10px;
+  left: 30px;
+  border-radius: 5px;
+  display: inline;
+}
+#f {
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  bottom: 10px;
+  left: 150px;
+  border-radius: 5px;
+  display: inline;
+}
+.logo {
+  position: absolute;
+  z-index: 8;
+  right: 0;
+  -webkit-transition: width 300ms ease-in-out, height 300ms ease-in-out,
+    margin 300ms ease-in-out, border-radius 300ms ease-in-out,
+    top 300ms ease-in-out, left 300ms ease-in-out, display 300ms ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#x,
+#y,
+#z {
+  display: none;
+  top: 10px;
+}
+#a:hover #x {
+  display: inline;
+  top: 0;
+}
+#a:hover #y {
+  display: inline;
+  top: 0;
+}
+#a:hover #z {
+  display: inline;
+  top: 0;
+}
+
+/* New */
+#g {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background-color: pink;
+  top: 100px;
+  left: 500px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#h {
+  -webkit-transition: width 300ms ease-in-out, height 300ms ease-in-out,
+    margin 300ms ease-in-out, border-radius 300ms ease-in-out,
+    top 300ms ease-in-out, left 300ms ease-in-out;
+  position: absolute;
+  z-index: -9;
+  top: 100px;
+  left: 510px;
+  width: 210px;
+  height: 220px;
+  background-color: green;
+  border-radius: 20px;
+}
+#h:hover,
+#g:hover ~ #h {
+  width: 240px;
+  height: 240px;
+  top: 90px;
+  left: 480px;
+}
+
+#j {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  bottom: 10px;
+  left: -10px;
+  border-radius: 5px;
+  display: inline;
+}
+#k {
+  padding-left: 5px;
+  padding-bottom: 10px;
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  bottom: 10px;
+  left: 30px;
+  border-radius: 5px;
+  display: inline;
+}
+#l {
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  bottom: 10px;
+  left: 150px;
+  border-radius: 5px;
+  display: inline;
+}
+.logo {
+  position: absolute;
+  z-index: 8;
+  right: 0;
+  -webkit-transition: width 300ms ease-in-out, height 300ms ease-in-out,
+    margin 300ms ease-in-out, border-radius 300ms ease-in-out,
+    top 300ms ease-in-out, left 300ms ease-in-out, display 300ms ease-in-out;
+}
+
+#x,
+#y,
+#z {
+  display: none;
+  top: 10px;
+}
+#g:hover #x {
+  display: inline;
+  top: 0;
+}
+#g:hover #y {
+  display: inline;
+  top: 0;
+}
+#g:hover #z {
+  display: inline;
+  top: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #g {
+    top: 400px;
+    left: 100px;
+    background-color: red;
+  }
+  #h {
+    top: 400px;
+    left: 100px;
+  }
+  #h:hover,
+  #g:hover ~ #h {
+    width: 240px;
+    height: 240px;
+    top: 390px;
+    left: 80px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+p {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
